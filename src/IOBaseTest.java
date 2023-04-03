@@ -1,4 +1,4 @@
-package test;
+
 
 /*
  * Denna klass innehåller kod som är gemensam för många JUnit-testfall till inlämningsuppgiftens olika delar.

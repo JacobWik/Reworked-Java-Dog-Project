@@ -1,4 +1,4 @@
-package test;
+
 
 /*
  * Denna klass innehåller kod som är gemensam för alla JUnit-testfall till inlämningsuppgiftens olika delar.
@@ -145,9 +145,6 @@ public abstract class BaseTest {
 		return (List<T>) field.getValue(sut);
 	}
 
-	// TODO: ordna metoderna i klasserna nedan i en mer logisk ordning, nu ligger de
-	// i den ordning de skapades
-
 	public static abstract class SoftwareUnderTest<T> {
 
 		private final T sut;
@@ -256,8 +253,6 @@ public abstract class BaseTest {
 		public Stream<FieldUnderTest> getInstanceFields(Class<?> type) {
 			return getFields().filter(f -> f.isNonStatic() && f.hasType(type));
 		}
-
-		// TODO: Borde finnas en för alla fält, inte bara instans
 		public Stream<FieldUnderTest> getInstanceFieldsAssignableTo(Class<?> type) {
 			return getFields().filter(f -> type.isAssignableFrom(f.sut().getType()));
 		}

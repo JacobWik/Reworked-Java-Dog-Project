@@ -1,9 +1,4 @@
-package test;
 
-
-
-
-// Jacob Wik Jawi1091
 
 /**
  * Denna klass är till för att möjliggöra testning av de klasser och metoder som

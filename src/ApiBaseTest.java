@@ -1,5 +1,3 @@
-package test;
-
 /*
  * Denna klass innehåller kod som är gemensam för många JUnit-testfall till inlämningsuppgiftens olika delar.
  * För att dessa ska fungera måste du ladda ner denna fil och lägga den i samma katalog som koden som ska testas.
