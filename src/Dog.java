@@ -1,9 +1,9 @@
-
 /**
 * @author Jacob Wik jawi1091
 */
 public class Dog {
 
+    // need to add Owner When the Owner Class is done
     private String breed;
     private String name;
 
@@ -37,11 +37,14 @@ public class Dog {
     public int getAge(){
         return age;
     }
+
+    // unsure if Casting is allowed
     public int getWeight(){
         int weight = (int) this.weight;
         return weight;
     }
 
+    // perhaps make a final attribute with 3.7 
     public double getTailLength(){
         if(breed.equals("tax") || breed.equals("dachshund")){
             return 3.7;
